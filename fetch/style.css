@@ -1,0 +1,114 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+form label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+form input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.3);
+    outline: none;
+}
+
+/* Botão de Enviar */
+button {
+    padding: 14px 0;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(33, 136, 56, 0.3);
+}
+
+button:active {
+    background-color: #1e7e34;
+}
+
+/* Lista de Animais */
+#animalList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    width: 100%;
+    margin: 30px auto 0;
+}
+
+#animalList li {
+    background-color: #ffffff;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+#animalList li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+#animalList li span {
+    font-weight: 600;
+    color: #28a745;
+}
